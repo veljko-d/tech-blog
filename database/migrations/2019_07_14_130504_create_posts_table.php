@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->text('content');
+            $table->string('source')->nullable();
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('category_id');
 
