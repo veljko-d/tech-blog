@@ -16,11 +16,26 @@ class CategoriesTableSeeder extends Seeder
     public function run()
     {
         DB::table('categories')->insert([
-            ['name' => 'Mobile'],
-            ['name' => 'Hardware'],
-            ['name' => 'Software'],
-            ['name' => 'Games'],
-            ['name' => 'Internet'],
+            [
+                'name' => 'Mobile',
+                'slug' => 'mobile',
+            ],
+            [
+                'name' => 'Hardware',
+                'slug' => 'hardware',
+            ],
+            [
+                'name' => 'Software',
+                'slug' => 'software',
+            ],
+            [
+                'name' => 'Games',
+                'slug' => 'games',
+            ],
+            [
+                'name' => 'Internet',
+                'slug' => 'internet',
+            ],
         ]);
     }
 }

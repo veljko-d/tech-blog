@@ -16,32 +16,110 @@ class TagsTableSeeder extends Seeder
     public function run()
     {
         DB::table('tags')->insert([
-            ['name' => 'sony'],
-            ['name' => 'xperia-1'],
-            ['name' => '4k'],
-            ['name' => 'intel'],
-            ['name' => 'graphic-card'],
-            ['name' => 'amd'],
-            ['name' => 'cpu'],
-            ['name' => 'spoiler'],
-            ['name' => 'samsung'],
-            ['name' => 'hbm2e'],
-            ['name' => 'xiaomi'],
-            ['name' => 'mi-a3'],
-            ['name' => 'halo'],
-            ['name' => 'master-chief'],
-            ['name' => 'thunderbolt-3'],
-            ['name' => 'usb4'],
-            ['name' => 'microsoft'],
-            ['name' => 'skype'],
-            ['name' => 'www'],
-            ['name' => 'world-of-warcraft'],
-            ['name' => 'directx-12'],
-            ['name' => 'windows-7'],
-            ['name' => 'metro-exodus'],
-            ['name' => 'mozilla'],
-            ['name' => 'firefox'],
-            ['name' => 'edge'],
+            [
+                'name' => 'Sony',
+                'slug' => 'sony',
+            ],
+            [
+                'name' => 'Xperia 1',
+                'slug' => 'xperia-1',
+            ],
+            [
+                'name' => '4K',
+                'slug' => '4k',
+            ],
+            [
+                'name' => 'Intel',
+                'slug' => 'intel',
+            ],
+            [
+                'name' => 'Graphics Card',
+                'slug' => 'graphics-card',
+            ],
+            [
+                'name' => 'AMD',
+                'slug' => 'amd',
+            ],
+            [
+                'name' => 'CPU',
+                'slug' => 'cpu',
+            ],
+            [
+                'name' => 'Spoiler',
+                'slug' => 'spoiler',
+            ],
+            [
+                'name' => 'Samsung',
+                'slug' => 'samsung',
+            ],
+            [
+                'name' => 'HBM2E',
+                'slug' => 'hbm2e',
+            ],
+            [
+                'name' => 'Xiaomi',
+                'slug' => 'xiaomi',
+            ],
+            [
+                'name' => 'Mi A3',
+                'slug' => 'mi-a3',
+            ],
+            [
+                'name' => 'Halo',
+                'slug' => 'halo',
+            ],
+            [
+                'name' => 'Master Chief',
+                'slug' => 'master-chief',
+            ],
+            [
+                'name' => 'Thunderbolt 3',
+                'slug' => 'thunderbolt-3',
+            ],
+            [
+                'name' => 'USB4',
+                'slug' => 'usb4',
+            ],
+            [
+                'name' => 'Microsoft',
+                'slug' => 'microsoft',
+            ],
+            [
+                'name' => 'Skype',
+                'slug' => 'skype',
+            ],
+            [
+                'name' => 'World Wide Web',
+                'slug' => 'world-wide-web',
+            ],
+            [
+                'name' => 'World of Warcraft',
+                'slug' => 'world-of-warcraft',
+            ],
+            [
+                'name' => 'DirectX 12',
+                'slug' => 'directx-12',
+            ],
+            [
+                'name' => 'Windows 7',
+                'slug' => 'windows-7',
+            ],
+            [
+                'name' => 'Metro Exodus',
+                'slug' => 'metro-exodus',
+            ],
+            [
+                'name' => 'Mozilla',
+                'slug' => 'mozilla',
+            ],
+            [
+                'name' => 'Firefox',
+                'slug' => 'firefox',
+            ],
+            [
+                'name' => 'Edge',
+                'slug' => 'edge',
+            ],
         ]);
     }
 }

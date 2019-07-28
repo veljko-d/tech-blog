@@ -19,11 +19,20 @@ class Post extends Model
      */
     protected $fillable = [
         'title',
+        'slug',
         'content',
         'source',
         'user_id',
         'category_id',
     ];
+
+    /**
+     * @return mixed
+     */
+    public function getRouteKey()
+    {
+        return $this->slug;
+    }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
