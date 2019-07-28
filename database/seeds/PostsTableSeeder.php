@@ -18,6 +18,7 @@ class PostsTableSeeder extends Seeder
         DB::table('posts')->insert([
             [
                 'title'       => 'Sony Xperia 1 screen works in 4K all the time',
+                'slug'        => 'sony-xperia-1-screen-works-in-4k-all-the-time',
                 'content'     => 'Sony launched the Xperia 1 with the first 4K OLED display in a smartphone. It arrived with a 21:9 ratio and the whole panel is trademarked under the moniker CinemaWide. According to moderators on an official Sony forum, it won\'t follow in the footsteps of the XZ2 Premium and revert to 1080p for most of the UI and apps - everything will be shown in the 4K resolution of 3840 x 1644 pixels.
 
 Still, the apps that do not support native 4K and will work in Full HD until support is added. The native apps will all be updated to support the new resolution - Home Screen, Gallery, Settings, along with third-party platforms like Netflix are all going to be ready by the time the phone hits the shelves.',
@@ -28,6 +29,7 @@ Still, the apps that do not support native 4K and will work in Full HD until sup
             ],
             [
                 'title'       => 'Intel teases its graphics card in prototype renders',
+                'slug'        => 'intel-teases-its-graphics-card-in-prototype-renders',
                 'content'     => 'Intel uses its Odyssey event at GDC 2019 to show off some prototype renders of its upcoming Xe graphics cards.
 
 Intel hosted some members of a newly-formed graphics card community, a group of people surfing the hype wave of Intel\'s upcoming launch of graphics card for both the professional and gaming markets.
@@ -40,6 +42,7 @@ The Odyssey event was held during GDC 2019 in San Francisco, with a few differen
             ],
             [
                 'title'       => 'AMD addresses Spoiler vulnerability: Ryzen users are safe from this one',
+                'slug'        => 'amd-addresses-spoiler-vulnerability-ryzen-users-are-safe-from-this-one',
                 'content'     => 'In context: Researchers continue to find ways to abuse and exploit speculative execution on modern CPUs. The newest vulnerability has been named "Spoiler," and while it\'ll likely be a thorn in Intel\'s side for some time to come with no viable solution, AMD\'s processors are unaffected claims the CPU maker.
 
 Researchers at Worcester Polytechnic Institute in the US, and the University of Lübeck in Germany, recently discovered another speculative execution vulnerability impacting Intel processors. Dubbed "Spoiler," and like Spectre before it, the flaw preys upon the CPU\'s speculative execution engine that presciently guesses upcoming computations to boost performance.',
@@ -50,6 +53,7 @@ Researchers at Worcester Polytechnic Institute in the US, and the University of 
             ],
             [
                 'title'       => 'Samsung Introduces HBM2E Memory, Packing a 33% Bandwidth Boost',
+                'slug'        => 'samsung-introduces-hbm2e-memory-packing-a-33-bandwidth-boost',
                 'content'     => 'At Nvidia\'s GPU Technology Conference, GTC, Samsung has revealed their latest HBM memory innovation, showcasing HBM2E "Flashbolt" memory, which offers a 33% increase in speed over the company\'s older HBM2 chips. 
 
 When compared to Samsung\'s already fast Aquabolt HBM2 offerings, which can deliver u to 2.4Gbps speeds, Flashbolt can offer 3.2Gbps transfer rates, a 33% increase over what was previously possible. 
@@ -62,6 +66,7 @@ Each of the die used in Samsung\'s Flashpoint HBM2 memory is 16Gb in size, which
             ],
             [
                 'title'       => 'Xiaomi Mi A3 to come with an in-display fingerprint scanner',
+                'slug'        => 'xiaomi-mi-a3-to-come-with-an-in-display-fingerprint-scanner',
                 'content'     => 'Xiaomi might have hit the jackpot with the latest Redmi series, but the company keeps pushing. The latest tech that it wants to bring to its midrangers, is the under-display fingerprint scanner. Reports from XDA-Developers revealed at least three new phones with the FOD technology (fingerprint-on-display) were spotted for hardware testing, two of them with codenames suggesting Android One.
 
 They are most likely the Xiaomi Mi A3 and Xiaomi Mi A3 Lite and one of their Chinese versions.',
@@ -72,6 +77,7 @@ They are most likely the Xiaomi Mi A3 and Xiaomi Mi A3 Lite and one of their Chi
             ],
             [
                 'title'       => 'Halo: The Master Chief Collection\'s PC Version to be Playable Early through the "Halo Insider" Program',
+                'slug'        => 'halo-the-master-chief-collections-pc-version-to-be-playable-early-through-the-halo-insider-program',
                 'content'     => 'Microsoft and 343 Industries has revealed the "Halo Insider" program for PC and Xbox One, a "new way" for fans of the series to gain early access to future titles and help improve new releases as their launch approaches. 
 
 At the latest Halo tournament at SXSW, Microsoft confirmed that the PC version of Halo: The Master Chief Collection is about to enter its testing stages, with pre-launch tests for Halo: Reach coming first. This will be the first time that the game will be playable on the PC platform. 
@@ -86,6 +92,7 @@ In the future, the Halo Insider program will also be used for future Halo: Infin
             ],
             [
                 'title'       => 'Thunderbolt 3 becomes USB4? - Intel Contributes Thunderbolt 3 to Create USB4 Specification',
+                'slug'        => 'thunderbolt-3-becomes-usb4-intel-contributes-thunderbolt-3-to-create-usb4-specification',
                 'content'     => 'Last week USB-IF formally announced USB 3.2 alongside a confusing new naming scheme, but now it looks like USB 3.2, and its ultra-fast USB 3.2 Gen 2x2 variant, is going to be shortlived as USB\'s flagship connectivity standard. 
 
 Today, the USB Promoter Group has revealed its USB4 specification, which thanks to the contribution of Intel\'s Thunderbolt standard will offer 40Gbps of bandwidth, a 2x improvement over USB 3.2 Gen 2X2. 
@@ -102,6 +109,7 @@ In a single move, Intel has ensured that their Thunderbolt standard will be adop
             ],
             [
                 'title'       => 'Microsoft is testing Skype group calls for up to 50 people',
+                'slug'        => 'microsoft-is-testing-skype-group-calls-for-up-to-50-people',
                 'content'     => 'Skype conference calls could be about to get a whole lot busier. Microsoft is planning to bump up the maximum number of group call participants from 25 to 50 (18 more than can fit into a Group FaceTime call). The audio and video buttons will be enabled for larger groups, so people can more easily mute their microphones or turn on/off their webcam.
 
 So you don\'t bother people who can\'t join a call too much, Skype also plans to make ringing optional. It will instead send a notification to group call participants, though you can still ask Skype to ring people if they don\'t respond. These features are available as of today for beta testers, and they\'ll likely roll out more broadly later.',
@@ -112,6 +120,7 @@ So you don\'t bother people who can\'t join a call too much, Skype also plans to
             ],
             [
                 'title'       => '30th Anniversary of the World Wide Web',
+                'slug'        => '30th-anniversary-of-the-world-wide-web',
                 'content'     => '“Vague but exciting.”
 
 This was how Sir Tim Berners-Lee’s boss responded to his proposal titled “Information Management: A Proposal,” submitted on this day in 1989, when the inventor of the World Wide Web was a 33-year-old software engineer. Initially, Berners-Lee envisioned "a large hypertext database with typed links,"named  “Mesh,” to help his colleagues at CERN (a large nuclear physics laboratory in Switzerland) share information amongst multiple computers.
@@ -124,6 +133,7 @@ Berners-Lee’s boss allowed him time to develop the humble flowchart into a wor
             ],
             [
                 'title'       => 'World of Warcraft uses DirectX 12 running on Windows 7',
+                'slug'        => 'world-of-warcraft-uses-directx-12-running-on-windows-7',
                 'content'     => 'Blizzard added DirectX 12 support for their award-winning World of Warcraft game on Windows 10 in late 2018. This release received a warm welcome from gamers: thanks to DirectX 12 features such as multi-threading, WoW gamers experienced substantial framerate improvement. After seeing such performance wins for their gamers running DirectX 12 on Windows 10, Blizzard wanted to bring wins to their gamers who remain on Windows 7, where DirectX 12 was not available.',
                 'source'      => 'https://devblogs.microsoft.com/directx/world-of-warcraft-uses-directx-12-running-on-windows-7/',
                 'user_id'     => 8,
@@ -132,6 +142,7 @@ Berners-Lee’s boss allowed him time to develop the humble flowchart into a wor
             ],
             [
                 'title'       => '4A Games Releases Metro Exodus\' PC System Requirements',
+                'slug'        => '4a-games-releases-metro-exodus-pc-system-requirements',
                 'content'     => 'The Metro series has always been known for having monstrous PC system requirements, at least for those who want to play the game at its highest settings. 
 
 The PC system requirements for Metro Exodus are here, providing PC gamers with the opportunity to see how scalable the 4A Engine can be, scaling from low-powered consoled like the Xbox One to bleeding edge PCs with flagship level hardware like the Nvidia RTX 2080 Ti. 
@@ -146,6 +157,7 @@ In the coming days, 4A Games will release hardware requirements for Nvidia RTX r
             ],
             [
                 'title'       => 'Mozilla Firefox and Microsoft Edge Hacked at Pwn2Own',
+                'slug'        => 'mozilla-firefox-and-microsoft-edge-hacked-at-pwn2own',
                 'content'     => 'Mozilla Firefox and Microsoft Edge were both hacked in the second day of the Pwn2Own hacking contest, and in the case of the Windows 10 browser, researchers came up with a super-complex and clever approach to escape a virtual machine and get inside the host.
 
 Amat Cama and Richard Zhu of Fluoroacetate were the first to attempt to break into Mozilla Firefox using a JIT Bug and an out-of-bounds write in the Windows kernel.
