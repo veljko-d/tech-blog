@@ -168,6 +168,19 @@ This technique allowed to run code at system level, technically taking over the 
                 'category_id' => 5,
                 'created_at'  => '2019-03-23 15:00:00',
             ],
+            [
+                'title'       => 'Samsung Galaxy Note10+ 5G shows up on 3C with 25W charger',
+                'slug'        => 'samsung-galaxy-note10-5g-shows-up-on-3c-with-25w-charger',
+                'content'     => 'Samsung is looking to release a trio of Galaxy Note10 models - normal, plus sized and a 5G version of the plus. A 3C certification sheet is here to confirm the charging capabilities of the 5G version.
+
+The listing mentions a phone with a model number SM-N9760 and a 25W charger that comes along with it. This is the same speed as the Note10+, although that one will be able to reach 45W with an optional faster charger. Odds are the 5G version will be in the same boat, although given its expected higher price tag it\'s disappointing that you\'d still need to pay extra to get the fastest possible charging speeds.
+
+August 7 is pretty close so we will know for sure soon enough.',
+                'source'      => 'https://www.gsmarena.com/samsung_galaxy_note10_5g_shows_up_on_3c_with_25w_charger-news-38384.php',
+                'user_id'     => 3,
+                'category_id' => 1,
+                'created_at'  => '2019-07-29 15:00:00',
+            ],
         ]);
     }
 }

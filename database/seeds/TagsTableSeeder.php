@@ -120,6 +120,18 @@ class TagsTableSeeder extends Seeder
                 'name' => 'Edge',
                 'slug' => 'edge',
             ],
+            [
+                'name' => 'Galaxy ',
+                'slug' => 'galaxy',
+            ],
+            [
+                'name' => 'Note10+',
+                'slug' => 'note-10',
+            ],
+            [
+                'name' => '5G',
+                'slug' => '5g',
+            ],
         ]);
     }
 }
