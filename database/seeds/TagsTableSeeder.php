@@ -125,12 +125,16 @@ class TagsTableSeeder extends Seeder
                 'slug' => 'galaxy',
             ],
             [
-                'name' => 'Note10+',
-                'slug' => 'note-10',
+                'name' => 'Note10',
+                'slug' => 'note10',
             ],
             [
                 'name' => '5G',
                 'slug' => '5g',
+            ],
+            [
+                'name' => 'Ice Lake',
+                'slug' => 'ice-lake',
             ],
         ]);
     }

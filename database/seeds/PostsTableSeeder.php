@@ -181,6 +181,21 @@ August 7 is pretty close so we will know for sure soon enough.',
                 'category_id' => 1,
                 'created_at'  => '2019-07-29 15:00:00',
             ],
+            [
+                'title'       => 'Intel Is Finally Shipping Ice Lake in Volume',
+                'slug'        => 'intel-is-finally-shipping-ice-lake-in-volume',
+                'content'     => 'During Intel’s quarterly conference call last week, CEO Bob Swan confirmed that the company is, at long last, moving into volume production on 10nm. If you thought Intel had basically given up on scaling its process technology into the new node, that’s not the case.
+
+Swan made a number of comments related to 10nm during the call. Ice Lake servers have been sampled to enterprise customers, with early production expected in 1H 2020 and volume production in the back half of the year. Cooper Lake (14nm) will share a platform with Ice Lake when those server parts launch in 2020. Regarding 10nm client launches, Swan said:
+
+    We began shipping Ice Lake clients in the second quarter supporting systems on the shelf for the holiday selling season and expect to ship Agilex, our first 10-nanometer FPGA later this year.
+
+    We now have two factories in full production on 10-nanometer. We are also on track to launch 7-nanometer in 2021. With a roughly 2x improvement in density over 10-nanometer, our 7-nanometer process, which will be comparable to competitors’ 5-nanometer nodes, and will put us on pace with historical Moore’s Law scaling.',
+                'source'      => 'https://www.extremetech.com/computing/295815-intel-is-finally-shipping-ice-lake-in-volume',
+                'user_id'     => 2,
+                'category_id' => 2,
+                'created_at'  => '2019-07-29 11:19:00',
+            ],
         ]);
     }
 }
