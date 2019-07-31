@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::redirect('/', '/home');
+
+Route::resource('posts', 'PostController')->parameters(['posts' => 'slug']);
+
+Route::get('/posts/tags/{slug}', 'TagController@index');
+
+Route::get('/posts/categories/{slug}', 'CategoryController@index');

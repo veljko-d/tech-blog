@@ -22,6 +22,14 @@ class Tag extends Model
     ];
 
     /**
+     * @return mixed
+     */
+    public function getRouteKey()
+    {
+        return $this->slug;
+    }
+
+    /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function posts()
