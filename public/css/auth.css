@@ -1,8 +1,8 @@
 /* ----------------- FORM ELEMENT --------------- */
 #form-container {
-    border: 2px solid rgba(54, 69, 79, 0.1);
     border-bottom: none;
     border-radius: 0.4em;
+    background: #1111;
     margin: 7% auto;
     width: 31em;
 }

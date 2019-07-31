@@ -7,7 +7,7 @@
 
 #container {
     border-radius: 0.4em;
-    border: 2px solid rgba(54, 69, 79, 0.1);
+    background: #1111;
     padding: 3%;
     margin: 7% auto;
     min-width: 36em;
