@@ -12,6 +12,13 @@
     <div class="col-3"></div>
 
     <div class="col-6">
+        <!-- Post Path -->
+        <div id="path">
+            <a href="{{ url('/') }}">Home</a> ›
+            <a href="#">{{ $post->category->category->name }}</a> ›
+            <a href="/posts/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
+        </div>
+
         <div id="post-content">
             <h2><span>{{ $post->title }}</span></h2>
 
@@ -20,21 +27,21 @@
             <!-- Post Header -->
             <div id="sec1">
                 <div>
-                    <i class="fas fa-layer-group"></i>
-                    <p><a href="/posts/categories/{{ $post->category_slug }}">{{ $post->category_name }}</a></p>
-                    <p>|</p>
                     <i class="fas fa-clock"></i>
                     <p>{{ $post->created_at->toFormattedDateString() }}</p>
                     <p>|</p>
+
                     <i class="fas fa-user"></i>
                     <p>Posted by: <a href="/user/{{ $post->user_id }}/posts">{{ $post->user_name }}</a></p>
                     <p>|</p>
+
                     <i class="fas fa-comment"></i>
                     <p>{{ $post->comments->count() }}</p>
                 </div>
 
                 <div>
                     <p id="show-size">Text size <span>▸</span></p>
+
                     <button id="default">default</button>
                     <button id="increase">+</button>
                     <button id="decrease">‒</button>
@@ -43,6 +50,8 @@
 
             <!-- Post content -->
             <div id="pst-cnt">
+                {{-- <img src="" alt="" class="content-img"> --}}
+
                 {{ $post->content }}
             </div>
 

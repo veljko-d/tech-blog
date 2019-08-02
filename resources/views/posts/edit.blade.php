@@ -43,9 +43,13 @@
 
                     <select name="category_id">
                         @foreach ($categories as $category)
-                            <option value="{{ $category->id }}" @if ($category->id == $post->category_id) selected @endif>
-                                {{ $category->name }}
-                            </option>
+                            <optgroup label="{{ $category->name }}">
+                                @foreach ($category->categories as $subcategory)
+                                    <option value="{{ $subcategory->id }}" @if ($subcategory->id == $post->category->id) selected @endif>
+                                        {{ $subcategory->name }}
+                                    </option>
+                                @endforeach
+                            </optgroup>
                         @endforeach
                     </select>
                 </div>

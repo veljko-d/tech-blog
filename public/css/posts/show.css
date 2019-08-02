@@ -1,3 +1,23 @@
+/* --------------------- PATH ------------------- */
+#path {
+    margin: 6% 5%;
+    padding: 0.5em;
+    border-top: 3px dashed rgba(54, 69, 79, 0.1);
+    border-bottom: 3px dashed rgba(54, 69, 79, 0.1);
+}
+
+#path a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #333;
+    transition-duration: 0.4s;
+}
+
+#path a:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
 /* ----------------- POST CONTENT --------------- */
 #post-content {
 	margin: 3% auto;
@@ -78,6 +98,12 @@
 }
 
 /* -------- POST CONTENT: ACTUAL CONTENT -------- */
+.content-img {
+    display: block;
+    margin: 1% auto 3% auto;
+    width: 75%;
+}
+
 #pst-cnt {
 	padding: 7% 5% 2.5% 5%;
 	white-space: pre-line; /* show line breaks in browser */
@@ -113,6 +139,7 @@
 
 #tags p a {
     text-decoration: none;
+    background: #f7f7f7;
     color: #333;
     border: 1px solid grey;
     padding: 0.2em 0.3em;

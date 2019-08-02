@@ -24,7 +24,7 @@ class PostsTableSeeder extends Seeder
 Still, the apps that do not support native 4K and will work in Full HD until support is added. The native apps will all be updated to support the new resolution - Home Screen, Gallery, Settings, along with third-party platforms like Netflix are all going to be ready by the time the phone hits the shelves.',
                 'source'      => 'https://www.gsmarena.com/xperia_1_screen_uses_4k_resolution_all_the_time-news-36162.php',
                 'user_id'     => 5,
-                'category_id' => 1,
+                'category_id' => 4,
                 'created_at'  => '2019-03-22 17:20:00',
             ],
             [
@@ -37,7 +37,7 @@ Intel hosted some members of a newly-formed graphics card community, a group of 
 The Odyssey event was held during GDC 2019 in San Francisco, with a few different concept designs teased that fans have submitted. Intel being this confident showing off concept designs leads me to hoping that they actually use them, even if we get a launch of a few different SKUs, the same card/specs but different designs would be cool.',
                 'source'      => 'https://www.tweaktown.com/news/65311/intel-teases-graphics-card-prototype-renders/index.html',
                 'user_id'     => 5,
-                'category_id' => 2,
+                'category_id' => 8,
                 'created_at'  => '2019-03-23 13:00:00',
             ],
             [
@@ -48,7 +48,7 @@ The Odyssey event was held during GDC 2019 in San Francisco, with a few differen
 Researchers at Worcester Polytechnic Institute in the US, and the University of Lübeck in Germany, recently discovered another speculative execution vulnerability impacting Intel processors. Dubbed "Spoiler," and like Spectre before it, the flaw preys upon the CPU\'s speculative execution engine that presciently guesses upcoming computations to boost performance.',
                 'source'      => 'https://www.techspot.com/news/79234-amd-addresses-spoiler-vulnerability-ryzen-users-safe-one.html',
                 'user_id'     => 3,
-                'category_id' => 2,
+                'category_id' => 7,
                 'created_at'  => '2019-03-18 14:59:00',
             ],
             [
@@ -61,7 +61,7 @@ When compared to Samsung\'s already fast Aquabolt HBM2 offerings, which can deli
 Each of the die used in Samsung\'s Flashpoint HBM2 memory is 16Gb in size, which when stacked create 16GB memory chips, each of which packs 410GB/s of memory bandwidth. For context, AMD\'s Radeon RX Vega 56 offers 410GB/s of memory bandwidth over two HBM2 memory chips. Yes, Samsung\'s Flashbolt HBM2 memory offers a 2x boost in speed over the memory used in the RX Vega 56.',
                 'source'      => 'https://www.overclock3d.net/news/memory/samsung_introduces_hbm2e_memory_packing_a_33_bandwidth_boost/1',
                 'user_id'     => 2,
-                'category_id' => 2,
+                'category_id' => 8,
                 'created_at'  => '2019-03-20 15:00:00',
             ],
             [
@@ -72,7 +72,7 @@ Each of the die used in Samsung\'s Flashpoint HBM2 memory is 16Gb in size, which
 They are most likely the Xiaomi Mi A3 and Xiaomi Mi A3 Lite and one of their Chinese versions.',
                 'source'      => 'https://www.gsmarena.com/xiaomi_mi_a3_to_come_with_an_indisplay_fingerprint_scanner-news-36160.php',
                 'user_id'     => 8,
-                'category_id' => 1,
+                'category_id' => 4,
                 'created_at'  => '2019-03-22 16:10:00',
             ],
             [
@@ -87,7 +87,7 @@ At the time of writing, signups for the Halo Insider program are open to the pub
 In the future, the Halo Insider program will also be used for future Halo: Infinite tests, though for now, the system is primarily in place for PC testing for the Master Chief Collection. Former Master Chief Collection (MCC) Insiders need to apply to the Halo Insider program, as members of the former are not automatically part of the latter.',
                 'source'      => 'https://www.overclock3d.net/news/software/halo_the_master_chief_collection_s_pc_version_to_be_playable_early_through_the_halo_insider_program/1',
                 'user_id'     => 6,
-                'category_id' => 4,
+                'category_id' => 21,
                 'created_at'  => '2019-03-18 13:50:00',
             ],
             [
@@ -104,7 +104,7 @@ So why would Intel do this? The answer is simple, market adoption and competitio
 In a single move, Intel has ensured that their Thunderbolt standard will be adopted by every major manufacturer, while also giving them a clear advantage over their competition when it comes to implementing USB4 support. Thanks to Thunderbolt much of the software/hardware ecosystem for USB4 has already been built, which means that we should see USB4 devices relatively quickly. ',
                 'source'      => 'https://www.overclock3d.net/news/input_devices/thunderbolt_3_becomes_usb4_-_intel_contributes_thunderbolt_3_to_create_usb4_specification/1',
                 'user_id'     => 6,
-                'category_id' => 2,
+                'category_id' => 13,
                 'created_at'  => '2019-03-05 16:09:00',
             ],
             [
@@ -115,7 +115,7 @@ In a single move, Intel has ensured that their Thunderbolt standard will be adop
 So you don\'t bother people who can\'t join a call too much, Skype also plans to make ringing optional. It will instead send a notification to group call participants, though you can still ask Skype to ring people if they don\'t respond. These features are available as of today for beta testers, and they\'ll likely roll out more broadly later.',
                 'source'      => 'https://www.engadget.com/2019/03/15/skype-group-call-notifications-microsoft-beta/',
                 'user_id'     => 6,
-                'category_id' => 3,
+                'category_id' => 22,
                 'created_at'  => '2019-03-16 10:59:00',
             ],
             [
@@ -128,7 +128,7 @@ This was how Sir Tim Berners-Lee’s boss responded to his proposal titled “In
 Berners-Lee’s boss allowed him time to develop the humble flowchart into a working model, writing the HTML language, the HTTP application, and WorldWideWeb.app— the first Web browser and page editor. By 1991, the external Web servers were up and running.',
                 'source'      => 'https://www.google.com/doodles/30th-anniversary-of-the-world-wide-web',
                 'user_id'     => 6,
-                'category_id' => 5,
+                'category_id' => 20,
                 'created_at'  => '2019-03-12 19:30:00',
             ],
             [
@@ -137,7 +137,7 @@ Berners-Lee’s boss allowed him time to develop the humble flowchart into a wor
                 'content'     => 'Blizzard added DirectX 12 support for their award-winning World of Warcraft game on Windows 10 in late 2018. This release received a warm welcome from gamers: thanks to DirectX 12 features such as multi-threading, WoW gamers experienced substantial framerate improvement. After seeing such performance wins for their gamers running DirectX 12 on Windows 10, Blizzard wanted to bring wins to their gamers who remain on Windows 7, where DirectX 12 was not available.',
                 'source'      => 'https://devblogs.microsoft.com/directx/world-of-warcraft-uses-directx-12-running-on-windows-7/',
                 'user_id'     => 8,
-                'category_id' => 3,
+                'category_id' => 15,
                 'created_at'  => '2019-03-13 17:20:00',
             ],
             [
@@ -152,7 +152,7 @@ For their PC system requirements, 4A Games have provided us with system hardware
 In the coming days, 4A Games will release hardware requirements for Nvidia RTX ray tracing, which are expected to be significantly higher than what you will see below.',
                 'source'      => 'https://www.overclock3d.net/news/software/4a_games_releases_metro_exodus_pc_system_requirements/1',
                 'user_id'     => 6,
-                'category_id' => 4,
+                'category_id' => 21,
                 'created_at'  => '2019-01-25 20:30:00',
             ],
             [
@@ -165,7 +165,7 @@ Amat Cama and Richard Zhu of Fluoroacetate were the first to attempt to break in
 This technique allowed to run code at system level, technically taking over the machine completely after pointing Firefox to a crafted website. The two were received a price of $50,000.',
                 'source'      => 'https://news.softpedia.com/news/mozilla-firefox-and-microsoft-edge-hacked-at-pwn2own-525396.shtml#sgal_0',
                 'user_id'     => 6,
-                'category_id' => 5,
+                'category_id' => 20,
                 'created_at'  => '2019-03-23 15:00:00',
             ],
             [
@@ -178,7 +178,7 @@ The listing mentions a phone with a model number SM-N9760 and a 25W charger that
 August 7 is pretty close so we will know for sure soon enough.',
                 'source'      => 'https://www.gsmarena.com/samsung_galaxy_note10_5g_shows_up_on_3c_with_25w_charger-news-38384.php',
                 'user_id'     => 3,
-                'category_id' => 1,
+                'category_id' => 4,
                 'created_at'  => '2019-07-29 15:00:00',
             ],
             [
@@ -193,7 +193,7 @@ Swan made a number of comments related to 10nm during the call. Ice Lake servers
     We now have two factories in full production on 10-nanometer. We are also on track to launch 7-nanometer in 2021. With a roughly 2x improvement in density over 10-nanometer, our 7-nanometer process, which will be comparable to competitors’ 5-nanometer nodes, and will put us on pace with historical Moore’s Law scaling.',
                 'source'      => 'https://www.extremetech.com/computing/295815-intel-is-finally-shipping-ice-lake-in-volume',
                 'user_id'     => 2,
-                'category_id' => 2,
+                'category_id' => 7,
                 'created_at'  => '2019-07-29 11:19:00',
             ],
         ]);

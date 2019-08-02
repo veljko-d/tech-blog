@@ -38,15 +38,11 @@ class PostRepository
     public function show(string $slug)
     {
         return Post::join('users', 'users.id', '=', 'posts.user_id')
-                   ->join('categories', 'categories.id', '=', 'posts.category_id')
-                   ->with(['tags:name,slug'])
+                   ->with(['tags:name,slug', 'category', 'category.category'])
                    ->select(
                        'posts.*',
                        'users.id as user_id',
-                       'users.name as user_name',
-                       'categories.id as category_id',
-                       'categories.name as category_name',
-                       'categories.slug as category_slug'
+                       'users.name as user_name'
                    )
                    ->where('posts.slug', $slug)
                    ->first();

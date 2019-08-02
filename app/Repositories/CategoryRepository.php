@@ -12,11 +12,11 @@ use App\Models\Category;
 class CategoryRepository
 {
     /**
-     * @return Category[]|\Illuminate\Database\Eloquent\Collection
+     * @return mixed
      */
     public function index()
     {
-        return Category::all();
+        return Category::noParent()->with('categories')->paginate(10);
     }
 
     /**
