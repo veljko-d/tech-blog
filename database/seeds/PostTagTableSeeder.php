@@ -31,6 +31,7 @@ class PostTagTableSeeder extends Seeder
             ['post_id' => 6, 'tag_id'  => 13],
             ['post_id' => 6, 'tag_id'  => 14],
             ['post_id' => 7, 'tag_id'  => 15],
+            ['post_id' => 7, 'tag_id'  => 4],
             ['post_id' => 7, 'tag_id'  => 16],
             ['post_id' => 8, 'tag_id'  => 17],
             ['post_id' => 8, 'tag_id'  => 18],
