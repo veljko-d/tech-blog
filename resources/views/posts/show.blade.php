@@ -15,7 +15,7 @@
         <!-- Post Path -->
         <div id="path">
             <a href="{{ url('/') }}">Home</a> ›
-            <a href="#">{{ $post->category->category->name }}</a> ›
+            <a href="/posts/categories/{{ $post->category->category->slug }}">{{ $post->category->category->name }}</a> ›
             <a href="/posts/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
         </div>
 
@@ -50,7 +50,9 @@
 
             <!-- Post content -->
             <div id="pst-cnt">
-                {{-- <img src="" alt="" class="content-img"> --}}
+                @foreach ($post->images as $image)
+                    <img src="/storage/images/posts/{{ $post->slug . '/' . $image->name . '.' . $image->ext}}" alt="{{ $image->name . '.' . $image->ext }}" class="content-img">
+                @endforeach
 
                 {{ $post->content }}
             </div>

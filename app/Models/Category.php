@@ -31,6 +31,14 @@ class Category extends Model
     }
 
     /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function image()
+    {
+        return $this->hasOne(Image::class);
+    }
+
+    /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function category()

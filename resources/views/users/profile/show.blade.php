@@ -12,10 +12,31 @@
     <div class="col-6">
         <div id="section">
             <div id="img-cont">
-                {{-- <img src="/storage/images/users/{{ $user->slug . '/' . $image->name . '.' . $image->ext}}" alt="avatar" class="content-img"> --}}
-                <img src="/images/avatars/default.png" alt="avatar" class="content-img">
+                @if ($user->image)
+                    <img src="/storage/images/users/{{ $user->slug . '/' . $user->image->name . '.' . $user->image->ext}}" alt="avatar" class="content-img">
+                @else
+                    <img src="/images/avatars/default.png" alt="avatar" class="content-img">
+                @endif
 
-                <div id="overlay">Change your avatar</div>
+                @include ('layouts.errors')
+
+                <form name="create" action="/avatar" method="POST" enctype="multipart/form-data" onsubmit="return validateNewForm()">
+                    @csrf
+
+                    <label for="file-upload" class="custom-file-upload"><i class="fas fa-images"></i> Select</label>
+                    <input type="file" id="file-upload" name="image">
+
+                    <input type="submit" value="Upload">
+                </form>
+
+                @if ($user->image)
+                    <form method="POST" action="/avatar/{{ $user->image->id }}">
+                        @method('DELETE')
+                        @csrf
+
+                        <input type="submit" value="Delete Avatar">
+                    </form>
+                @endif
             </div>
 
             <p><i class='fas fa-user'></i> Username: {{ $user->name }}</p>

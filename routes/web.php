@@ -19,6 +19,10 @@ Route::redirect('/', '/home');
 
 Route::get('/users/{slug}', 'User\UserController@show');
 
+Route::resource('avatar', 'User\AvatarController')->only([
+    'store', 'destroy'
+]);
+
 Route::resource('posts', 'PostController')->parameters(['posts' => 'slug']);
 
 Route::get('/posts/tags/{slug}', 'TagController@index');

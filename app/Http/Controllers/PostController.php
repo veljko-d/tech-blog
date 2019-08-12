@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\Post\StorePostRequest;
 use App\Http\Requests\Post\UpdatePostRequest;
 use App\Services\CategoryService;
+use App\Services\ImageService;
 use App\Services\PostService;
 use App\Services\TagService;
 
@@ -15,6 +16,8 @@ use App\Services\TagService;
  */
 class PostController extends Controller
 {
+    const POST_IMAGES_PATH = 'images/posts/';
+
     /**
      * @var PostService
      */
@@ -31,21 +34,29 @@ class PostController extends Controller
     private $tagService;
 
     /**
+     * @var ImageService
+     */
+    private $imageService;
+
+    /**
      * PostController constructor.
      *
      * @param PostService     $postService
      * @param CategoryService $categoryService
      * @param TagService      $tagService
+     * @param ImageService    $imageService
      */
     public function __construct(
         PostService $postService,
         CategoryService $categoryService,
-        TagService $tagService
+        TagService $tagService,
+        ImageService $imageService
     )
     {
         $this->postService = $postService;
         $this->categoryService = $categoryService;
         $this->tagService = $tagService;
+        $this->imageService = $imageService;
 
         $this->middleware(['auth', 'verified'])->except(['index', 'show',]);
     }
@@ -79,6 +90,14 @@ class PostController extends Controller
     {
         $post = $this->postService->store($request->validated());
         $tagIds = $this->tagService->store($request->validated()['tags']);
+
+        if (isset($request->validated()['images'])) {
+            $this->imageService->store(
+                $request->validated()['images'],
+                self::POST_IMAGES_PATH . $post->slug,
+                $post->id
+            );
+        }
 
         $post->tags()->attach($tagIds);
 
@@ -119,6 +138,7 @@ class PostController extends Controller
     public function update(UpdatePostRequest $request, string $slug)
     {
         $this->postService->update($request->validated(), $slug);
+        $tagIds = $this->tagService->update($request->validated()['tags']);
 
         return redirect('posts')->with('status', 'Post successfully edited!');
     }
@@ -130,6 +150,11 @@ class PostController extends Controller
      */
     public function destroy(string $slug)
     {
+        $post = $this->postService->show($slug);
+        $this->imageService->destroy(
+            $post->images->pluck('id')->toArray(),
+            self::POST_IMAGES_PATH . $post->slug
+        );
         $this->postService->destroy($slug);
 
         return redirect('posts')->with('status', 'Post successfully deleted!');

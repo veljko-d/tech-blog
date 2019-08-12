@@ -18,6 +18,6 @@ class UserRepository
      */
     public function show(string $slug)
     {
-        return User::where('slug', $slug)->first();
+        return User::with('image')->where('slug', $slug)->first();
     }
 }

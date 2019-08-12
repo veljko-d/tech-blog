@@ -38,7 +38,7 @@ class PostRepository
     public function show(string $slug)
     {
         return Post::join('users', 'users.id', '=', 'posts.user_id')
-                   ->with(['tags:name,slug', 'category', 'category.category'])
+                   ->with(['tags:name,slug', 'category', 'category.category', 'images'])
                    ->select(
                        'posts.*',
                        'users.id as user_id',

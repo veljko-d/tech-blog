@@ -23,6 +23,7 @@ class User extends Authenticatable implements MustVerifyEmail, CanResetPassword
      */
     protected $fillable = [
         'name',
+        'slug',
         'email',
         'password',
     ];
@@ -68,5 +69,13 @@ class User extends Authenticatable implements MustVerifyEmail, CanResetPassword
     public function comments()
     {
         return $this->hasMany(Comment::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function image()
+    {
+        return $this->hasOne(Image::class);
     }
 }

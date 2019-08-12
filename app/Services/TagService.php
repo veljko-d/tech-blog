@@ -79,4 +79,12 @@ class TagService
 
         return $tag ? $tag : abort(404);
     }
+
+    public function update(string $data)
+    {
+        //$same = (count($a) == count($b) && !array_diff($a, $b));
+
+        //$tags = explode(';', $data);
+        //$tagIds = [];
+    }
 }

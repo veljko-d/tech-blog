@@ -22,7 +22,7 @@
                 @include ('layouts.errors')
             </div>
 
-            <form name="create" action="{{ route('posts.store') }}" method="POST" onsubmit="return validateNewForm()">
+            <form name="create" action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data" onsubmit="return validateNewForm()">
                 @csrf
 
                 <label for="title"><i class="fas fa-pen"></i> Title</label>
@@ -50,6 +50,9 @@
                         @endforeach
                     </select>
                 </div>
+
+                <label for="file-upload" class="custom-file-upload"><i class="fas fa-images"></i> Add Image(s)</label>
+                <input type="file" id="file-upload" name="images[]" multiple>
 
                 <hr>
 
