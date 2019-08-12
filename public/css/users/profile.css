@@ -1,0 +1,61 @@
+/* -------------- PROFILE SECTION --------------- */
+/* Section 1 */
+#main #section {
+	border-radius: 0.4em;
+	border: 2px solid rgba(54, 69, 79, 0.1);
+
+    padding: 3% 7%;
+    margin: 5% 0% 5% 0%;
+	min-width: 35em;
+}
+
+/* Image section */
+#main #section #img-cont {
+    position: relative;
+    width: 25%;
+    margin: 4% 0% 10% 0%;
+}
+
+#main #section img {
+    display: block;
+    width: 100%;
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+}
+
+#main #section #overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0px 0px 5px 5px;
+  color: white;
+  width: 100%;
+  transition: 0.5s;
+  opacity: 0;
+  color: white;
+  font-size: 0.7em;
+  padding: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+#main #section #img-cont:hover #overlay {
+  opacity: 1;
+}
+
+/* Horizontal line */
+#main #section hr {
+    border: 1px solid rgba(54, 69, 79, 0.1);
+    margin-bottom: 25px;
+}
+
+#main #section #show:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#main #section #stats {
+	display: none;
+	padding: 1% 0% 0% 5%;
+	font-size: 0.9em;
+}

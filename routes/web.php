@@ -17,6 +17,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::redirect('/', '/home');
 
+Route::get('/users/{slug}', 'User\UserController@show');
+
 Route::resource('posts', 'PostController')->parameters(['posts' => 'slug']);
 
 Route::get('/posts/tags/{slug}', 'TagController@index');

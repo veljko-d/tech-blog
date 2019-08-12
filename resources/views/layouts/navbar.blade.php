@@ -63,8 +63,8 @@
                 </button>
 
                 <div class="dropdown-content">
-                    <a href="{{ url('/users/profile') }}">
-                        <i class='fas fa-id-card'></i> {{ __('My Profile') }}
+                    <a href="/users/{{ Auth::user()->slug }}">
+                        <i class='fas fa-id-card'></i> {{ __('Profile') }}
                     </a>
 
                     <div>
