@@ -9,7 +9,7 @@ use App\Models\Post;
  *
  * @package App\Repositories
  */
-class PostRepository
+class PostRepository implements RepositoryInterface
 {
     /**
      * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator

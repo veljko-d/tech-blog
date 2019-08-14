@@ -2,6 +2,7 @@
 
 namespace App\Services\Traits;
 
+use App\Repositories\RepositoryInterface;
 use Illuminate\Support\Str;
 
 /**
@@ -12,6 +13,19 @@ use Illuminate\Support\Str;
 trait SlugTrait
 {
     /**
+     * @var RepositoryInterface
+     */
+    private $repository;
+
+    /**
+     * @param RepositoryInterface $repository
+     */
+    public function setRepository(RepositoryInterface $repository)
+    {
+        $this->repository = $repository;
+    }
+
+    /**
      * @param string $title
      *
      * @return string
@@ -20,10 +34,10 @@ trait SlugTrait
     {
         $slug = Str::slug($title, '-');
 
-        if ($this->postRepository->show($slug)) {
+        if ($this->repository->show($slug)) {
             $slug .= '-1';
 
-            if ($this->postRepository->show($slug)) {
+            if ($this->repository->show($slug)) {
                 return $this->getSlugWithCounter($slug);
             }
 
@@ -43,7 +57,7 @@ trait SlugTrait
         $n = substr($slug, -1);
         $slug = substr($slug, 0, -1) . ++$n;
 
-        if ($this->postRepository->show($slug)) {
+        if ($this->repository->show($slug)) {
             return $this->getSlugWithCounter($slug);
         }
 

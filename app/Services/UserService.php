@@ -3,6 +3,8 @@
 namespace App\Services;
 
 use App\Repositories\UserRepository;
+use App\Services\Traits\SlugTrait;
+use Illuminate\Support\Facades\Hash;
 
 /**
  * Class UserService
@@ -11,6 +13,8 @@ use App\Repositories\UserRepository;
  */
 class UserService
 {
+    use SlugTrait;
+
     /**
      * @var UserRepository
      */
@@ -34,5 +38,24 @@ class UserService
     public function show(string $slug)
     {
         return $this->userRepository->show($slug);
+    }
+
+    /**
+     * @param array $data
+     *
+     * @return mixed
+     */
+    public function store(array $data)
+    {
+        $this->setRepository($this->userRepository);
+
+        $data = [
+            'name'     => $data['name'],
+            'slug'     => $this->getSlug($data['name']),
+            'email'    => $data['email'],
+            'password' => Hash::make($data['password']),
+        ];
+
+        return $this->userRepository->store($data);
     }
 }

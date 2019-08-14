@@ -9,7 +9,7 @@ use App\Models\Tag;
  *
  * @package App\Repositories
  */
-class TagRepository
+class TagRepository implements RepositoryInterface
 {
     /**
      * @param array $data

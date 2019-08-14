@@ -45,6 +45,8 @@ class PostService
      */
     public function store(array $data)
     {
+        $this->setRepository($this->postRepository);
+
         $data["user_id"] = Auth::id();
         $data["slug"] = $this->getSlug($data['title']);
 

@@ -3,9 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Models\Role;
-use App\Models\User;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Hash;
+use App\Services\UserService;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -37,12 +36,19 @@ class RegisterController extends Controller
     protected $redirectTo = '/home';
 
     /**
-     * Create a new controller instance.
-     *
-     * @return void
+     * @var UserService
      */
-    public function __construct()
+    private $userService;
+
+    /**
+     * RegisterController constructor.
+     *
+     * @param UserService $userService
+     */
+    public function __construct(UserService $userService)
     {
+        $this->userService = $userService;
+
         $this->middleware('guest');
     }
 
@@ -64,16 +70,13 @@ class RegisterController extends Controller
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
-     * @return \App\Models\User
+     * @param array $data
+     *
+     * @return mixed
      */
     protected function create(array $data)
     {
-        $user = User::create([
-            'name'     => $data['name'],
-            'email'    => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        $user = $this->userService->store($data);
 
         $user->roles()->attach(Role::where('name', Role::ROLE_CUSTOMER)->first());
 

@@ -9,7 +9,7 @@ use App\Models\Image;
  *
  * @package App\Repositories
  */
-class ImageRepository
+class ImageRepository implements RepositoryInterface
 {
     /**
      * @param array $data

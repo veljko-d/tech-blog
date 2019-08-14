@@ -9,7 +9,7 @@ use App\Models\Category;
  *
  * @package App\Repositories
  */
-class CategoryRepository
+class CategoryRepository implements RepositoryInterface
 {
     /**
      * @return mixed
