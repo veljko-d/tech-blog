@@ -11,11 +11,9 @@
 |
 */
 
+Route::get('/', 'HomeController@index')->name('home');
+
 Auth::routes(['verify' => true]);
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::redirect('/', '/home');
 
 Route::get('/users/{slug}', 'User\UserController@show');
 
