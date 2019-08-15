@@ -37,7 +37,9 @@ class UserService
      */
     public function show(string $slug)
     {
-        return $this->userRepository->show($slug);
+        $user = $this->userRepository->show($slug);
+
+        return $user ? $user : abort(404);
     }
 
     /**
