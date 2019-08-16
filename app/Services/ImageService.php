@@ -45,6 +45,7 @@ class ImageService
             $image = [
                 'name'    => pathinfo($storedPath, PATHINFO_FILENAME),
                 'ext'     => pathinfo($storedPath, PATHINFO_EXTENSION),
+                'path'    => pathinfo($storedPath, PATHINFO_DIRNAME),
                 'size'    => Storage::size($storedPath),
                 'post_id' => $postId,
                 'user_id' => $userId,

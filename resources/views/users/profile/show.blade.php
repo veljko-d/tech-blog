@@ -13,7 +13,7 @@
         <div id="section">
             <div id="img-cont">
                 @if ($user->image)
-                    <img src="/storage/images/users/{{ $user->slug . '/' . $user->image->name . '.' . $user->image->ext}}" alt="avatar" class="content-img">
+                    <img src="/storage/{{ $user->image->path . '/' . $user->image->name . '.' . $user->image->ext}}" alt="avatar" class="content-img">
                 @else
                     <img src="/images/avatars/default.png" alt="avatar" class="content-img">
                 @endif

@@ -20,7 +20,8 @@ class CreateImagesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('ext');
-            $table->bigInteger('size');
+            $table->string('path');
+            $table->bigInteger('size')->nullable();
             $table->unsignedInteger('user_id')->nullable();
             $table->unsignedInteger('post_id')->nullable();
             $table->unsignedInteger('category_id')->nullable();

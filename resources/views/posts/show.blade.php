@@ -51,7 +51,7 @@
             <!-- Post content -->
             <div id="pst-cnt">
                 @foreach ($post->images as $image)
-                    <img src="/storage/images/posts/{{ $post->slug . '/' . $image->name . '.' . $image->ext}}" alt="{{ $image->name . '.' . $image->ext }}" class="content-img">
+                    <img src="/storage/{{ $image->path . '/' . $image->name . '.' . $image->ext}}" alt="{{ $image->name . '.' . $image->ext }}" class="content-img">
                 @endforeach
 
                 {{ $post->content }}
