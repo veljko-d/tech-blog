@@ -72,4 +72,12 @@ class Post extends Model
     {
         return $this->hasMany(Image::class);
     }
+
+    /**
+     * @param $data
+     */
+    public function addComment($data)
+    {
+        $this->comments()->create($data);
+    }
 }

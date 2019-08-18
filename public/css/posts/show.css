@@ -130,7 +130,7 @@
 }
 
 #post-bottom {
-    margin: 0% 5%;
+    margin: 0 5%;
 }
 
 #post-src {
@@ -197,22 +197,26 @@
 
 /* -------------- COMMENT SECTION --------------- */
 #comment-section {
-	border-radius: 0.4em;
-    border: 2px solid rgba(54, 69, 79, 0.1);
 	display: none;
 	z-index: auto;
 	margin: -1.7% auto 2% auto;
 }
 
-#main #comment-section #val-info {
+#comment-section #val-info {
     color: #e0301e;
     font-weight: bold;
-	margin: 2em 0 2em 2em;
+	margin: 1em 0 1.8em 1em;
+}
+
+#comment-section form {
+    border: 2px dotted rgba(54, 69, 79, 0.1);
+    margin: 1em 2.5em 0 2.5em;
+    padding: 0.5em 1em;
 }
 
 #comment-section form textarea {
-	width: 94%;
-	margin: 1% 3% 3% 3%;
+	width: 96%;
+	margin: 3% 0 0.7% 2%;
 	position: relative;
 	resize: vertical;
 }
@@ -233,7 +237,7 @@
 }
 
 #comment-section form input[type=submit] {
-	margin: 0 3% 2% 3%;
+	margin: 0 3% 2% 2%;
 	background-color: inherit;
     color: #45a049;
     padding: 0.3em 1em;
@@ -256,7 +260,23 @@
 	margin: 1em 0;
 }
 
-#comment-section ul hr {
-	border: 1px solid rgba(54, 69, 79, 0.1);
+.comment-content {
+	border: 2px dotted rgba(54, 69, 79, 0.1);
 	margin: 1em 2.5em 0 0;
+    padding: 0.5em 1em;
+    transition: 0.4s;
+}
+
+.comment-content:hover {
+    border: 2px dotted rgba(54, 69, 79, 0.4);
+}
+
+.comment-content p:first-child {
+    font-size: 0.6em;
+    color: #65737e;
+    padding-bottom: 1.5em;
+}
+
+.comment-content p:last-child {
+    white-space: pre-line; /* show line breaks in browser */
 }

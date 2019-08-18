@@ -54,7 +54,7 @@ body {
 
 /* *************************** HEADER STYLE ***************************** */
 header {
-    background: url('/images/backgrounds/bckg1.jpg') fixed;
+    background: url('/images/backgrounds/background-1.jpg') fixed;
     /*background-color: #509fb9;*/
     color: white;
     box-shadow: 0 7px 5px #252e42;

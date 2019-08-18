@@ -25,4 +25,6 @@ Route::resource('posts', 'PostController')->parameters(['posts' => 'slug']);
 
 Route::get('/posts/tags/{slug}', 'TagController@index');
 
-Route::get('/posts/categories/{slug}', 'CategoryController@index');
+Route::get('/posts/categories/{slug}', 'CategoryController@show');
+
+Route::post('/posts/{slug}/comments', 'CommentController@store');
