@@ -6,6 +6,7 @@
 
 @section('css')
     <link href="{{ asset('css/posts/show.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/posts/comments.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')
